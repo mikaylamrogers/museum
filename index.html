@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- link stylesheets of libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MUSÉE DU QUARANTINE</title>
+  </head>
+  <body>
+
+    <!-- video for background -->
+    <video autoplay muted loop id="myVideo">
+      <source src="osw.mp4" type="video/mp4">
+    </video>
+
+    <!-- rellax  -->
+    <div class="title rellax" data-rellax-speed="1">
+      <h1>MUSÈE DU QUARANTINE</h1>
+      <h2>a gallery for anyone, anywhere, anytime.</h2>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- rellax & lightbox images -->
+    <div class="mainContainer">
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/800x800"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/801x801"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/802x802"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/803x803"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/804x804"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/805x805"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/806x806"></a>
+        <a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn"><img class="" data-rellax-speed="-10" src="https://source.unsplash.com/random/807x807"></a>
+    </div>
+    </div>
+
+  <div id="morphing-content" class="hidden">
+    <p>HELLOOO</p>
+  </div>
+
+    <!-- link script libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
