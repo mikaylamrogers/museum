@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 30px;
@@ -21,30 +25,31 @@ h1 {
   padding-top: 60px;
   text-align: center;
   font-size: 120px;
+  font-weight:normal;
   width: 100%;
   margin: 0;
 }
 
 h2 {
+  font-weight:normal;
   font-size: 20px;
   text-align: center;
   margin: 0;
 }
 
-.mainContainer {
+/* .mainContainer {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+} */
+
+.mainContainer p {
+  height: 15vmin;
+  text-align: center;
+  color: black;
 }
 
 a {
   text-decoration: none;
-}
-
-.mainContainer p {
-  background-color: white;
-  height: 15vmin;
-  text-align: center;
-  color: black;
 }
 
 img {
@@ -54,22 +59,31 @@ img {
 /* ~~~~~~~~~~~CURSORS~~~~~~~~~~~ */
 /* idea from https://codepen.io/cubeghost/pen/dPeQqR */
 
-.dog {
-	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC),auto;
-}
 .cactus {
+  background-color: #abe1f7;
 	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
 }
+
 .egg {
+  background-color: #fa9195;
 	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEdJREFUeAF90FEKgDAMwFDT+x9awYCRwjL282CM9joFsGie/swYy6oiENW8RaJ5PBvxvCpqxfwetTOqeyo+Rgx3JjnrCxNa3TwuAY6NyoMhAAAAAElFTkSuQmCC),auto;
 }
+
+.dog {
+  background-color: #f2a7da;
+	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC),auto;
+}
+
 .paint {
+  background-color: #abe1f7;
 	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAMAAAB4HKeYAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAADRJREFUeAFjwAsYsfMYQYgRLsLICKWhskxMTDAmCEMAwhQmEEDho8szUiqPaR+xfIR7sQMAR6QAjICqvMYAAAAASUVORK5CYII=),auto;
 }
 .planet {
+  background-color: #fa9195;
 	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
 }
 .tv {
+  background-color: #f2a7da;
 	cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEZJREFUeAGt0EEKgDAUA1En9z+0qEENhA+FvlUZQqE9Bnynlmlr2iVkSY66AHrg+MddSUiU6VuxqMhYquzcCvO6PZjhx5oTQ+8Bs3EshqIAAAAASUVORK5CYII=),auto;
 }
 
@@ -159,4 +173,31 @@ img {
 
 #morphing-content a {
   color: pink;
+}
+
+/* ~~~~ Other default styles From https://codepen.io/fancyapps/pen/eezERq ~~~~ */
+
+.btn {
+  color: black;
+  text-decoration: none;
+  padding: 10px 10px;
+  line-height: 1.5;
+  /* border-radius: 20px; */
+  font-size: 100%;
+  /* margin: 5px 5px 5px 1; */
+  display: inline-block;
+  outline: none;
+  transition: all .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
 }
