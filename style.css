@@ -1,29 +1,19 @@
 body {
-  /* background-image: url('grad.png'); */
-  /* background-repeat: no-repeat; */
   font-family: 'DM Sans', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
   text-align: center;
   padding-top: 200px;
 }
 
-.mainContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 0vmin;
-  grid-row-gap: 0vmin;
-  padding: 0 1vw 0 1vw;
-}
-
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
-  /* justify-content: center; */
-  right: 0;
+  top: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 50%;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -41,9 +31,20 @@ h2 {
   margin: 0;
 }
 
-.fullWidth {
-  grid-column-start: 0;
-  grid-column-end: span 4;
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainContainer p {
+  background-color: white;
+  height: 15vmin;
+  text-align: center;
+  color: black;
 }
 
 img {
@@ -139,13 +140,6 @@ img {
   color: #fff;
 }
 
-.fancybox-morphing .fancybox-button--close::after,
-.fancybox-morphing .fancybox-button--close::before {
-    height: 1.55px;
-    width: 22px;
-    left: calc(50% - 11px);
-}
-
 .fancybox-morphing .fancybox-button--close:hover {
   background: rgba(0, 0, 0, 0.25);
 }
@@ -155,7 +149,7 @@ img {
   margin: 0;
   position: relative;
   background: transparent;
-  color: #fff;
+  color: white;
   padding: 6em 10vw;
   line-height: 2;
   z-index: 3;
@@ -164,5 +158,5 @@ img {
 }
 
 #morphing-content a {
-  color: #fff;
+  color: pink;
 }
