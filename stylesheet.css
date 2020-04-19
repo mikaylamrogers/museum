@@ -10,3 +10,13 @@
     font-style: normal;
 
 }
+
+@font-face {
+  -family: "Moderat";
+  src: url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.eot");
+  src: url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.eot?#iefix") format("embedded-opentype"),
+       url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.woff2") format("woff2"),
+       url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.woff") format("woff"),
+       url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.ttf") format("truetype"),
+       url("//db.onlinewebfonts.com/t/0c3856a335fdfdb8b0652f7c3d367fdd.svg#Moderat") format("svg");
+}

@@ -3,8 +3,10 @@ var rellax = new Rellax('.rellax', {
     vertical: false,
   });
 
+  window.onscroll = function() {myFunction()};
+
   // Step 1: Create jQuery plugin
-  // ============================
+  // example code from https://codepen.io/tijosfx/pen/VNROKw //
 
   $.fn.fancyMorph = function( opts ) {
 
